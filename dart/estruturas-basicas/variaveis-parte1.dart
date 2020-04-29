@@ -38,11 +38,11 @@ void main() {
 
   // Diferente do Java/JS, o Dart só aceita concatenação entre Strings usando o operador "+".
   // Tipos diferentes devem ser convertidos para String
-  print("Exemplo de concatenação do Dart" + inteiro.toString());
+  print('Exemplo de concatenação do Dart' + inteiro.toString());
 
   // Para concatenar strings com tipos diferentes deve-se usar a interpolação
   // Semelhante ao Template Strings/Template literal do ECMA Script 6
-  print("Como concatenar string: $inteiro + $decimal = ${decimal + inteiro}");
+  print('Como concatenar string: $inteiro + $decimal = ${decimal + inteiro}');
 
   // Também é possível usar variavel fora da função
   print('Variável fora da função main(): $calculo');
