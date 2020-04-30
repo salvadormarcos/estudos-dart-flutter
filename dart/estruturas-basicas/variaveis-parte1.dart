@@ -28,9 +28,14 @@ void main() {
   usandoVar = 2020.toString();
   print(usandoVar);
 
-  // Variavel dinamica (semelhante ao Object do Java)
-  dynamic dinamico = 10;
-  print(dinamico);
+  // Variável do tipo Object (semelhante ao Object do Java)
+  Object obj = 10;
+  print(obj);
+
+  // Variavel dinamica (semelhante ao "any" do TypeScript)
+  // Diferente declarar como "Object", com o tipo "dynamic" vc não receberá avisos/advertencia com a chamada
+  dynamic dinamico = 10.9995;
+  print(dinamico.isNegative);
 
   // O tipo dinamico do Dart permite trocar o valor interno tal qual o Object do Java
   dinamico = 'Mudando o valor do dinamico para String';
