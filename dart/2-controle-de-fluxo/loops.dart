@@ -13,4 +13,8 @@ void main() {
   // ForEach (função) semelhante ao .forEach do JavaScript e do Java
   // Diferente do Java/JavaScript, precisa por a variavel dentro de parentese ()
   frutas.forEach((fruta) => print('ForEach: $fruta'));
+
+  /**
+   * While e DoWhile tem sintaxe semelhante ao Java e JavaScript
+   */
 }
