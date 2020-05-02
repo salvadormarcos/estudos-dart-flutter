@@ -7,20 +7,22 @@ void main() {
 
   print('Valor de "a": $a');
 
-  a = null;
-  var b = null;
-  var valores = [ 1, null ];
+  // a = null;
+  // var b = null;
+  const valores = [ 1, null ];
+  const valorDefault = 50;
 
   for (var valor in valores) {
-    a = valor;
-    b ??= valor;
+    var a = valor;
+    var b = valor;
+
+    a = valorDefault;   // Sempre atribui valor
+    b ??= valorDefault; // Se B for nulo, atribui valor. Caso contrário B permanece o mesmo
 
     print('+---------------------------------------');
     print('| Valor (item do laço): $valor');
     print('| Valor "a": $a');
     print('| Valor "b": $b');
     print('+---------------------------------------');
-
-    b = 50; // Reseta o valor de B
   }
 }
