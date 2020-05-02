@@ -2,6 +2,8 @@ void main() {
   print('Função com tipo de retorno explicito - isBlank: ${ isBlank('') }');
 
   print('Função com tipo de retorno omitido - isNotBlank: ${ isNotBlank('') }');
+
+  print('Função declarada com uma linha - square: ${ square(2) }');
 }
 
 // Declarando a função com tipo de retorno explícito
