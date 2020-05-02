@@ -7,8 +7,6 @@ void main() {
 
   print('Valor de "a": $a');
 
-  // a = null;
-  // var b = null;
   const valores = [ 1, null ];
   const valorDefault = 50;
 
