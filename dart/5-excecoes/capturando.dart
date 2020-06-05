@@ -20,7 +20,7 @@ void main(List<String> args) {
     // O primeiro parâmetro do Catch é a Exception. É possível declarar um segundo parâmetro para obter a Stacktrace
     print('Erro: ${ e.toString() }');
   } catch (e, s) {
-    // Capturando toda e qualuer Exception/Error/Whatever lançando sem se preocupar com o tipo da Exception
+    // Capturando toda e qualquer Exception/Error/Objeto/Whatever lançando sem se preocupar com o tipo da Exception
     // Semelhante ao anterior, porém agora, obtendo a Stacktrace do mesmo (opcional)
     print('Um erro desconhecido aconteceu!!:  $e');
     print('StackTrace: $s');
