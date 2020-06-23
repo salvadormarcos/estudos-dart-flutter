@@ -20,6 +20,7 @@ void main() {
   p3?.dataNascto = DateTime.parse('1989-11-18');
 }
 
+// Construtor "default". Assim como no Java e JS, quando não declarar um construtor, o Dart fornece um construtor sem argumentos
 class Pessoa {
 
   String nome;
