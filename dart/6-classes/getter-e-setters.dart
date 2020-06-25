@@ -12,6 +12,8 @@ class Retangulo {
 
   int esquerda, direita, topo, rodape;
 
+  // Getters/setters do Dart funcionam de forma semelhante ao JavaScript/TypeScript
+  // Eles são "métodos especiais" que se comportam como propriedades/atributos de classe
   int get base => rodape ?? topo;
   set base(int base) => rodape = topo = base;
 
