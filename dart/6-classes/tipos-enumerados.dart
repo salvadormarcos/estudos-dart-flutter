@@ -27,6 +27,7 @@ class Teste {}
  */
 enum Cor {
 
+  // O padrão para escrever constantes de Enum é tudo em "caixa baixa" ou "lowercase"
   vermelho, verde, azul
 
 }
