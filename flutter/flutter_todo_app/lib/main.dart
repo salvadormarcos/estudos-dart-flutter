@@ -131,11 +131,15 @@ class _HomePageState extends State<HomePage> {
                     ),
                     FlatButton(
                       child: new Text('Cancelar'),
-                      onPressed: () => Navigator.of(context).pop()
+                      onPressed: () {
+                        newTaskCtrl.clear();
+                        Navigator.of(context).pop();
+                      }
                     )
                   ],
                 );
-              }
+              },
+              barrierDismissible: false
           );
         },
       ),
