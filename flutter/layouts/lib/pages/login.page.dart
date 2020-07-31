@@ -1,7 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:layouts/pages/home.page.dart';
+import 'package:layouts/pages/reset-password.page.dart';
+import 'package:layouts/pages/signup.page.dart';
 
 class LoginPage extends StatelessWidget {
+
+  _login(BuildContext ctx) {
+    final route = MaterialPageRoute(builder: (context) => HomePage());
+    Navigator.push(ctx, route);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,7 +67,14 @@ class LoginPage extends StatelessWidget {
                     'Recuperar senha',
                     textAlign: TextAlign.right
                 ),
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ResetPasswordPage()
+                    )
+                  )
+                },
               ),
             ),
             SizedBox(
@@ -104,7 +120,7 @@ class LoginPage extends StatelessWidget {
                       )
                     ],
                   ),
-                  onPressed: () => {},
+                  onPressed: () => _login(context),
                 ),
               ),
             ),
@@ -143,7 +159,7 @@ class LoginPage extends StatelessWidget {
                       )
                     ],
                   ),
-                  onPressed: () => {},
+                  onPressed: () => _login(context),
                 ),
               ),
             ),
@@ -157,7 +173,14 @@ class LoginPage extends StatelessWidget {
                   'Cadastre-se',
                   textAlign: TextAlign.center
                 ),
-                onPressed: () => {},
+                onPressed: () => {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => SignupPage()
+                      )
+                  )
+                },
               ),
             ),
           ],
