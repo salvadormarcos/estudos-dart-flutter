@@ -72,6 +72,9 @@ Widget cardItem() {
           child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur nisl eu mollis vulputate. Sed at luctus mi. Vestibulum ac congue velit. Mauris ornare interdum dui.'),
         ),
         ButtonBar(
+          // alignment: MainAxisAlignment.start,
+          buttonPadding: EdgeInsets.zero,
+          buttonMinWidth: 0,
           children: <Widget>[
             FlatButton(
               child: Icon(Icons.favorite),
